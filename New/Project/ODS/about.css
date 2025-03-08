@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fff;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #f4b400;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+.cta a {
+    color: #f4b400;
+    font-weight: bold;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Vision Section */
+.vision-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.vision-section h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.vision-section p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.vision-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.vision-icons div {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 180px;
+}
+
+.vision-icons img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+/* Why Choose Us Section */
+.section {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+
+.section h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.section ul li {
+    background: #f4b400;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px 0;
+    width: 80%;
+    margin: 5px auto;
+}
+
+/* Meet Our Expert Section */
+.section p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Call-to-Action (CTA) Button */
+.cta-btn {
+    background: #f4b400;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.cta:hover {
+    background-color: #e6a200;
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+.footer a {
+    color: #f4b400;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.cta-section {
+    text-align: center;
+    padding: 50px;
+    background: #003366;
+    color: white;
+}
