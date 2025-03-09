@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="home.html" class="logo">smart<span>sites</span></a>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blogmain.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cta">
+                <a href="tel:2018706000">Let's Talk <span>201-870-6000</span></a>
+            </div>
+        </header>
+
+        <div class="section contact-section">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="cta-btn">Submit</button>
+            </form>
+
+            <div id="form-response" class="form-response"></div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Digital Marketing Expert | <a href="privacy.html">Privacy Policy</a> | <a href="sitemap.html">Sitemap</a></p>
+        </div>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>

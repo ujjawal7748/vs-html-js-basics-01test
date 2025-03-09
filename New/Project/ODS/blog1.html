@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Digital Marketing Expert</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">smart<span>sites</span></div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cta">
+                <a href="tel:2018706000">Let's Talk <span>201-870-6000</span></a>
+            </div>
+        </header>
+
+        <div class="section blog-section">
+            <h2>Our Latest Blogs</h2>
+            <div id="blog-posts" class="blog-posts">
+                <!-- Dynamic Blog Posts Here -->
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Digital Marketing Expert | <a href="privacy.html">Privacy Policy</a> | <a href="sitemap.html">Sitemap</a></p>
+        </div>
+    </div>
+
+    <script>
+        const blogData = [
+            {
+                title: "SEO Best Practices for 2025",
+                date: "March 8, 2025",
+                content: [
+                    "Conduct thorough keyword research to identify search trends.",
+                    "Focus on high-quality content that answers user queries.",
+                    "Optimize meta titles, descriptions, and heading tags.",
+                    "Improve website loading speed for better performance.",
+                    "Implement structured data markup for enhanced search visibility."
+                ]
+            },
+            {
+                title: "Effective PPC Strategies to Boost ROI",
+                date: "February 20, 2025",
+                content: [
+                    "Define clear campaign goals and KPIs.",
+                    "Use negative keywords to filter irrelevant traffic.",
+                    "Create compelling ad copy with strong CTAs.",
+                    "Leverage A/B testing for improved ad performance.",
+                    "Monitor and adjust bids regularly to stay competitive."
+                ]
+            }
+        ];
+
+        function loadBlogs() {
+            const blogContainer = document.getElementById('blog-posts');
+            blogData.forEach(blog => {
+                const blogItem = document.createElement('div');
+                blogItem.classList.add('blog-item');
+                blogItem.innerHTML = `
+                    <h3>${blog.title}</h3>
+                    <p class="date">${blog.date}</p>
+                    <ul>${blog.content.map(point => `<li>${point}</li>`).join('')}</ul>
+                `;
+                blogContainer.appendChild(blogItem);
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", loadBlogs);
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: black;
+            color: white;
+            padding: 15px 30px;
+        }
+
+        .logo span { color: #f4b400; }
+
+        nav ul { list-style: none; display: flex; gap: 20px; }
+
+        nav ul li a { color: white; font-weight: bold; }
+
+        .cta a { color: #f4b400; font-weight: bold; }
+
+        .blog-section {
+            background: #f9f9f9;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .blog-item {
+            background: #fff;
+            border: 2px solid #f4b400;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .blog-item h3 { color: #333; }
+
+        .blog-item .date { color: #666; font-style: italic; }
+
+        .blog-item ul { padding-left: 20px; text-align: left; }
+
+        .blog-item ul li {
+            margin: 5px 0;
+            color: #444;
+        }
+
+        .footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+
+        .footer a { color: #f4b400; text-decoration: none; }
+    </style>
+</body>
+</html>

@@ -25,10 +25,12 @@ header {
     color: white;
     padding: 15px 30px;
 }
-
 .logo {
     font-size: 24px;
     font-weight: bold;
+    color: white;
+    text-decoration: none; /* Removes underline */
+    cursor: pointer; /* Ensures it's clear the text is clickable */
 }
 
 .logo span {
@@ -57,9 +59,7 @@ nav ul li a {
 
 /* Container Styles */
 .container {
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 /* Vision Section */
